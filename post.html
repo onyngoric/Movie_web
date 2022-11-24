@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <title>Post</title>
+    </head>
+
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" style="background-image: linear-gradient(to top,grey,white);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Animation</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Others</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <body>
+        <div class="post-container">
+            <div class="row" >
+                <div class="col"></div>
+                <div class="col">
+                    <!--post a movie here-->
+                    <form class="row g-3">
+                        <P>POST YOUR MOVIES HERE:</P>
+                        <div class="col-md-6">
+                          <label for="Movie_Title" class="form-label">Movie Title</label>
+                          <input type="text" class="form-control" id="Movie_Title">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Quality" class="form-label">Quality</label>
+                            <select id="Quality" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>Cam</option>
+                              <option>HD</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                          <label for="Year" class="form-label">Year</label>
+                          <input type="text" class="form-control" id="Year" placeholder="2022">
+                        </div>
+                        <div class="col-6">
+                          <label for="rating" class="form-label">Rating</label>
+                          <input type="text" class="form-control" id="rating">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="language" class="form-label">Language</label>
+                          <input type="text" class="form-control" id="language">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Genre" class="form-label">Genre</label>
+                            <input type="text" class="form-control" id="Genre">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Director" class="form-label">Directors</label>
+                            <input type="text" class="form-control" id="Director">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Writer" class="form-label">Writers</label>
+                            <input type="text" class="form-control" id="writer">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Staring" class="form-label">Staring</label>
+                            <input type="text" class="form-control" id="Staring">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="Story_line" class="form-label">Story Line</label>
+                          <textarea class="form-control" id="Story_line"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="file" class="form-control" id="video">
+                            <label class="input-group-text" for="video">Select Video...</label>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="file" class="form-control" id="Thumbnail">
+                            <label class="input-group-text" for="Thumbnail">Thumbnail...</label>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="slider_check">
+                            <label class="form-check-label" for="slider_check">
+                              Place on slider?
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Post</button>
+                        </div>
+                      </form>
+                    <!--End of form-->
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+        <script src="custom.js"></script>
+    </footer>
+</html>

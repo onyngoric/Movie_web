@@ -1,0 +1,29 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #000000;
+}
+p
+{
+	position: relative;
+	font-size: 4em;
+	color: rgb(255, 255, 255);
+	width: 80%;
+	font-family:cursive;
+}
+p span
+{
+	color: #f6fa03;
+	display: none;
+	font-size: 120px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
